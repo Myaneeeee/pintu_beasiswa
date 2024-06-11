@@ -257,3 +257,81 @@ nav .menu .btns .register a:hover{
     color: #3572EF;
     font-weight: 600;
 }
+
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 1em;
+}
+
+footer .container .column {
+    flex: 1;
+    padding: 0 1em;
+}
+
+footer .container .column h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer .container .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .container .column li {
+    margin-bottom: 8px;
+}
+
+footer .container .column a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .container .column a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a #linkedin{
+    width: 2.5em;
+}
+
+footer .social-media a #ig{
+    width: 2.5em;
+}
+
+footer .social-media a #facebook{
+    width: 2.5em;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 1em;
+}
