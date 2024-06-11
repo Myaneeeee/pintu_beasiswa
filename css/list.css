@@ -138,3 +138,221 @@ nav .menu .btns .register:hover{
 nav .menu .btns .register a:hover{
     color: #3572EF;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 2em 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .title {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+.content .search {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: max-content;
+    padding: 1em 2em;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;
+    border: #ccc solid 0.1em;
+    border-radius: 2em;
+}
+
+.content .search .input{
+    border: none;
+    font-size: 1.2em;
+    color: black;
+    width: 20em;
+}
+
+.content .search .input:focus{
+    outline: none;
+}
+
+.content .search .icon{
+    width: 2em;
+}
+
+.content .search a{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: #3572EF solid 0.15em;
+    background-color: #3572EF;
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+    transition: ease-in 200ms;
+}
+
+.content .search a:hover{
+    color: #3572EF;
+    background-color: white;
+}
+
+.content .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.content .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    gap: 1em;
+    background-color: aliceblue;
+    padding: 1.5em 1.75em;
+    border-radius: 1em;
+    filter: drop-shadow(rgb(205, 205, 205) 0.35em 0.35em 7px);
+}
+
+.content .cards .card a{
+    text-decoration: none;
+}
+
+.content .cards .card img{
+    width: 25em;
+    height: 17em;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.content .cards .card .title{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    min-height: 4em;
+}
+
+.content .cards .card .desc{
+    color: black;
+    font-size: 1.15em;
+    min-height: 12em;
+}
+
+.content .cards .card .btn{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    color: white;
+    text-align: center;
+    border: #3572EF solid 0.2em;
+    font-size: 1.15em;
+    width: max-content;
+    padding: 0.5em 1em;
+    border-radius: 0.75em;
+    font-weight: 600;
+    background-color: #3572EF;
+    transition: ease-in 200ms;
+    align-items: center;
+}
+
+.content .cards .card .btn:hover{
+    background-color: #3ABEF9;
+    border-color: #3ABEF9;
+    color: white;
+}
+
+.content .cards .card .icon{
+    width: 2em;
+}
+
+.content .cards .card #umnimg{
+    object-position: 0em -7.5em;
+}
+
+.content .cards .card #uphimg{
+    object-position: 0em -11.5em;
+}
+
+
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 1em;
+}
+
+footer .container .column {
+    flex: 1;
+    padding: 0 1em;
+}
+
+footer .container .column h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer .container .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .container .column li {
+    margin-bottom: 8px;
+}
+
+footer .container .column a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .container .column a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a #linkedin{
+    width: 2.5em;
+}
+
+footer .social-media a #ig{
+    width: 2.5em;
+}
+
+footer .social-media a #facebook{
+    width: 2.5em;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 1em;
+}

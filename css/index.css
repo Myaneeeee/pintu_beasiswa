@@ -279,7 +279,7 @@ nav .menu .btns .register a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 2.5em;
     align-self: center;
 }
 
