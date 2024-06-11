@@ -23,6 +23,7 @@ nav .menu{
     display: flex;
     flex-direction: row;
     gap: 4em;
+    transition: ease in 200ms;
 }
 
 nav .menu a{
