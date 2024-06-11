@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Arial';
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 10em;
+    position: sticky;
+}
+
+nav .logo{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+nav .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    transition: ease in 200ms;
+}
+
+nav .menu a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+
+nav .menu .home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
+}
+
+nav .menu .home .icon{
+    width: 2.15em;
+}
+
+nav .menu .home .txt{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+nav .menu .forum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
+}
+
+nav .menu .forum .icon{
+    width: 1.65em;
+}
+
+nav .menu .forum .txt{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+nav .menu .list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75em;
+}
+
+nav .menu .list .icon{
+    width: 2em;
+}
+
+nav .menu .list .txt{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+nav .menu .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: center;
+}
+
+nav .menu .btns a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.25em 1.25em;
+}
+
+nav .menu .btns .login{
+    border: #3572EF solid 0.15em;
+    border-radius: 0.5em;
+    transition: ease-in 200ms;
+}
+
+nav .menu .btns .login a{
+    color: #3572EF;
+    transition: ease-in 200ms;
+}
+
+nav .menu .btns .login:hover{
+    color: #3572EF;
+    background-color: #3572EF;
+    border: #3572EF solid 0.15em;
+    border-radius: 0.5em;
+}
+
+nav .menu .btns .login a:hover{
+    color: white;
+}
+
+nav .menu .btns .register{
+    color: #3572EF;
+    background-color: #3572EF;
+    border: #3572EF solid 0.15em;
+    border-radius: 0.5em;
+    transition: ease-in 200ms;
+}
+
+nav .menu .btns .register a{
+    color: white;
+    transition: ease-in 200ms;
+}
+
+nav .menu .btns .register:hover{
+    background-color: white;
+    border: #3572EF solid 0.15em;
+    border-radius: 0.5em;
+}
+
+nav .menu .btns .register a:hover{
+    color: #3572EF;
+}
+
+/* Content */
+.scholarship-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.scholarship-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    color: #080341;
+    text-align: center;
+}
+
+.scholarship-detail .address {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.university-image img {
+    width: 100%;
+    border-radius: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.scholarship-detail h2 {
+    font-size: 2em;
+    margin-bottom: 0.75em;
+    color: #080341;
+}
+
+.scholarship-detail .description {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.comments-section {
+    margin-top: 2em;
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.comment-box input[type="text"] {
+    flex: 1;
+    padding: 0.75em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+}
+
+.comment-box button {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    background-color: #3572EF;
+    color: white;
+    border: none;
+    border-radius: 0.25em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.comment img.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment .user-name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.comment .comment-text {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 1em;
+}
+
+.comment-actions button {
+    background: none;
+    border: none;
+    color: #3572EF;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 0;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 1em;
+}
+
+footer .container .column {
+    flex: 1;
+    padding: 0 1em;
+}
+
+footer .container .column h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer .container .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .container .column li {
+    margin-bottom: 8px;
+}
+
+footer .container .column a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .container .column a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a #linkedin{
+    width: 2.5em;
+}
+
+footer .social-media a #ig{
+    width: 2.5em;
+}
+
+footer .social-media a #facebook{
+    width: 2.5em;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 1em;
+}
