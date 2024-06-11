@@ -67,9 +67,7 @@
         document.getElementById('registForm').addEventListener('submit', function(event) {
             event.preventDefault(); 
             document.getElementById('submitBtn').disabled = true;
-            document.getElementById('submitBtn').style.color = '#007BFF';
-            document.getElementById('submitBtn').style.backgroundColor = 'white';
-            document.getElementById('submitBtn').style.border = '1px solid #cccccc';
+            
             document.getElementById('submitBtn').style.fontSize = '15px';
             document.getElementById('submitBtn').value = 'Registed!';
             setTimeout(function() {
