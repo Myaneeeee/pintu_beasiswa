@@ -193,7 +193,7 @@ nav .menu .btns .register a:hover{
     padding: 0.75em;
     font-size: 1em;
     border: 1px solid #ccc;
-    border-radius: 0.25em;
+    border-radius: 1em;
 }
 
 .comment-box button {
@@ -202,9 +202,20 @@ nav .menu .btns .register a:hover{
     background-color: #3572EF;
     color: white;
     border: none;
-    border-radius: 0.25em;
+    border-radius: 1em;
     margin-left: 0.5em;
     cursor: pointer;
+    font-weight: 600;
+    border:#3572EF solid 0.15em;
+    transition: ease-in 200ms;
+}
+
+.comment-box button:hover {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    background-color: white;
+    color: #3572EF;
+    border:#3572EF solid 0.15em
 }
 
 .comment {
@@ -246,6 +257,7 @@ nav .menu .btns .register a:hover{
     cursor: pointer;
     font-size: 0.9em;
     padding: 0;
+    border-radius: 1em;
 }
 
 footer {
