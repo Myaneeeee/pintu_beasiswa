@@ -245,7 +245,7 @@ nav .menu .btns .register a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    gap: 60em;
 }
 
 .content .viewedContent .title .txt {
@@ -495,6 +495,7 @@ nav .menu .btns .register a:hover{
     padding: 25px;
     margin-bottom: 20px;
     transition: ease-in 200ms;
+    cursor: pointer;
 }
 
 .content .FAQ .question-title {
@@ -505,6 +506,15 @@ nav .menu .btns .register a:hover{
 .content .FAQ .question:hover{
     color: white;
     background-color: #3572EF;
+}
+
+.content .FAQ .answer {
+    display: none;
+    padding: 10px 0;
+}
+
+.content .FAQ .answer p {
+    margin: 0;
 }
 
 footer {

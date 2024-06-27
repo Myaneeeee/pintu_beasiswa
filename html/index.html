@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pintu Beasiswa | Home</title>
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
 </head>
 <body>
     <header>
@@ -69,7 +70,7 @@
         <div class="viewedContent">
             <div class="title">
                 <div class="txt">
-                    Lihat Kembali
+                    Lihat <span style="color: #3572EF;">Kembali</span>
                 </div>
             </div>
             <div class="cards">
@@ -79,6 +80,29 @@
                     <div class="title">Universitas Bina Nusantara</div>
                     <div class="desc">BINUS UNIVERSITY menyediakan berbagai program beasiswa penuh maupun parsial untuk kamu yang berprestasi secara akademik maupun non-akademik di tingkat nasional dan international.</div>
                     <a href="../html/beasiswa/binus.html" class="btn">
+                        <div class="txt">Baca lebih lanjut</div>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </a>
+                </div>
+
+                <div class="card" id="universitas multimedia nusantara">
+                    <img src="../assets/beasiswa-umn.jpg" alt="" id="umnimg">
+                    
+                    <div class="title">Universitas Multimedia Nusantara</div>
+                    <div class="desc">Universitas Multimedia Nusantara menawarkan dukungan finansial kepada mahasiswa yang memiliki kompetensi di bidang akademik, non-akademik dan/atau berasal dari latar belakang ekonomi rendah.</div>
+                    <a href="../html/beasiswa/umn.html" class="btn">
+                        <div class="txt">Baca lebih lanjut</div>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </a>
+                </div>
+
+                <div class="card" id="universitas pelita harapan">
+                    <img src="../assets/beasiswa-uph.jpg" alt="" id="uphimg">
+                    
+                    <div class="title">Universitas Pelita Harapan</div>
+                    <div class="desc">Calling out all grade 12 students!
+                        This is your chance to earn Scholarship in UPH.Submission deadline 9th August 2023. Don't miss it!</div>
+                    <a href="../html/beasiswa/uph.html" class="btn">
                         <div class="txt">Baca lebih lanjut</div>
                         <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </a>
@@ -140,20 +164,35 @@
                 </div>          
             </div>
             <div class="questions">
-                <div class="question">
+                <div class="question" onclick="toggleAnswer('answer1')">
                     <h2 class="question-title">Bagaimana proses Pintu Beasiswa bekerja?</h2>
+                    <div id="answer1" class="answer">
+                        <p>Pintu Beasiswa bekerja sebagai wadah yang menggabungkan berbagai informasi beasiswa dari berbagai sumber. Dengan menggunakan aplikasi ini, pencari beasiswa dapat dengan mudah menemukan berbagai beasiswa yang tersedia sesuai dengan kebutuhan.</p>
+                    </div>
                 </div>
-                <div class="question">
+                <div class="question" onclick="toggleAnswer('answer2')">
                     <h2 class="question-title">Bagaimana cara mencari beasiswa yang sesuai dengan saya?</h2>
+                    <div id="answer2" class="answer">
+                        <p>Untuk mencari beasiswa yang sesuai, pengguna dapat menggunakan fitur pencarian yang tersedia di aplikasi Pintu Beasiswa. Pengguna dapat memasukkan kata kunci, kriteria tertentu seperti bidang studi, lokasi, dan tingkat pendidikan untuk menemukan beasiswa yang paling relevan.</p>
+                    </div>
                 </div>
-                <div class="question">
+                <div class="question" onclick="toggleAnswer('answer3')">
                     <h2 class="question-title">Bagaimana saya mengetahui perkembangan terbaru tentang beasiswa yang saya ajukan?</h2>
+                    <div id="answer3" class="answer">
+                        <p>Pengguna dapat mengikuti perkembangan terbaru tentang beasiswa yang mereka ajukan melalui notifikasi dan pembaruan yang dikirimkan oleh Pintu Beasiswa. Informasi tersebut juga dapat ditemukan di bagian profil atau dashboard pengguna di aplikasi.</p>
+                    </div>
                 </div>
-                <div class="question">
+                <div class="question" onclick="toggleAnswer('answer4')">
                     <h2 class="question-title">Bagaimana saya membuat forum diskusi?</h2>
+                    <div id="answer4" class="answer">
+                        <p>Untuk membuat forum diskusi, pengguna dapat masuk ke bagian forum di aplikasi Pintu Beasiswa. Di sana, pengguna dapat membuat topik diskusi baru dengan memasukkan judul dan isi topik, serta berinteraksi dengan pengguna lain yang memiliki minat atau kebutuhan yang sama.</p>
+                    </div>
                 </div>  
-                <div class="question">
+                <div class="question" onclick="toggleAnswer('answer5')">
                     <h2 class="question-title">Bagaimana saya mengetahui persyaratan tentang beasiswa tertentu?</h2>
+                    <div id="answer5" class="answer">
+                        <p>Pengguna dapat mengetahui persyaratan tentang beasiswa tertentu dengan membuka detail beasiswa yang tersedia di aplikasi Pintu Beasiswa. Setiap beasiswa akan memiliki deskripsi lengkap tentang persyaratan, kriteria, dan cara pendaftarannya.</p>
+                    </div>
                 </div>           
             </div>
         </div>
