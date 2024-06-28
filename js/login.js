@@ -10,11 +10,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
             setTimeout(function() {
                 document.getElementById('submitBtn').value = 'Redirecting to Home Page...';
                 setTimeout(function() {
-                    window.location.href = '../html/index.html';
+                    window.location.href = 'index.html';
                 }, 1000); // 1 second delay
-            }, 700); // 0.5 second delay
-        }, 700); // 0.5 second delay
-    },  500); // 0.5 second delay
-
-
+            }, 700); // 0.7 second delay
+        }, 700); // 0.7 second delay
+    }, 500); // 0.5 second delay
 });

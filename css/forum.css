@@ -214,27 +214,16 @@ nav .menu .btns .register a:hover{
 
 /* Comment Post Section */
 .post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #fff;
-    padding: 10px 0;
+    padding: 1.5em 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center;
     z-index: 1000;
-}
-
-.comment-section {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    max-width: 800px;
-    background-color: #f9f9f9;
-    border-radius: 25px;
-    padding: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .user-avatar {
@@ -244,25 +233,139 @@ nav .menu .btns .register a:hover{
     margin-right: 10px;
 }
 
-.comment-inputs {
-    flex-grow: 1;
+.comments {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-top: #c7c7c7 solid 0.05em;
+    padding-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comment-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+}
+
+.comment-content .author-name {
+    font-weight: 600;
+}
+
+.comment-content .comment-time {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.comment-reply {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
 }
 
 .comment-input {
     padding: 10px 15px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 25px;
     font-size: 1em;
-    background-color: #fff;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 
 .comment-input:focus {
     outline: none;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-color: #3572EF;
+}
+
+/* Additional CSS for new elements */
+.comment-reply input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.modal-content form input[type="text"],
+.modal-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+
+
+.modal-content form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3572EF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+.modal-content form button:hover {
+    background-color: #2857c0;
 }
 
 .submit-button {
@@ -274,7 +377,6 @@ nav .menu .btns .register a:hover{
     font-size: 1em;
     cursor: pointer;
     transition: background-color 200ms ease-in;
-    margin-left: 10px;
 }
 
 .submit-button:hover {
@@ -283,4 +385,82 @@ nav .menu .btns .register a:hover{
 
 .forum-name {
     margin-bottom: 5px;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 1em;
+}
+
+footer .container .column {
+    flex: 1;
+    padding: 0 1em;
+}
+
+footer .container .column h3 {
+    margin-top: 0;
+    font-size: 1.25em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+footer .container .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .container .column li {
+    margin-bottom: 8px;
+}
+
+footer .container .column a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .container .column a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-media a #linkedin{
+    width: 2.5em;
+}
+
+footer .social-media a #ig{
+    width: 2.5em;
+}
+
+footer .social-media a #facebook{
+    width: 2.5em;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #dcdcdc;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+    font-size: 1em;
 }
